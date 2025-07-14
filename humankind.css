@@ -1,0 +1,336 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #0d1422 !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.container-fluid{
+  display: flex !important;
+      /* flex-direction: row-reverse !important; */
+}
+.nav-item{
+  color: white !important;
+}
+.navbar-nav{
+   display: flex;
+   flex-basis: 80% !important;
+   justify-content: center;
+}
+
+.navbar-toggler{
+      order: 2;
+}
+
+nav > h1 {
+  color: white;
+  font-size: 24px;
+  font-weight: 800;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav-items > a {
+  font-weight: 800;
+  font-size: 14px;
+  border-radius: 4px;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.nav-items > button {
+  padding: 15px 30px;
+  background-color: gainsboro;
+  border: none;
+  font-weight: 800;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.logo {
+  text-transform: uppercase;
+  order: -1;
+}
+
+header {
+    height: 120vh;
+    background:linear-gradient(to bottom, transparent, black), url('https://cdn.sega.co.uk/humankind-game/public/styles/2560/public/content/media/bg/image/KeyArt_Oceania_3840x2160%20%282%29.jpg?itok=kGN5xTjD');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header>img{
+    opacity: 0.5;
+}
+
+.group1 {
+  display: flex;
+  gap: 20px;
+  /* margin-bottom: 20px; */
+}
+
+.group1 > .gp1,
+.group1 > .gp2 {
+  flex-basis: 50%;
+}
+.group2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.group2 > img {
+  object-fit: cover;
+  width: 100%;
+
+}
+
+.section2 {
+  background-color: #0d1422;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 50px;
+  font-family: "Courier New", Courier, monospace;
+  background-image: url("https://cdn.sega.co.uk/humankind-game/public/styles/2560/public/content/media/bg/image/promo-bg.jpg?VersionId=SoE1qzO7afryFYuBvGhQvGMB_KfwNRQy&itok=ORiEETbA");
+}
+
+.section1 > div {
+  flex-basis: 50%;
+}
+
+.section1 > div > img {
+  object-fit: contain;
+  width: 100%;
+  box-shadow: 2px 2px 5px black;
+}
+
+.sec2{
+    display: flex;
+    justify-content: center;
+    background-color: #0d1422;
+    padding: 80px 0px;
+    gap: 20px;
+}
+
+.vid-group{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 200px;
+    position: relative;
+}
+
+.vid-group>video{
+    border-radius: 10px;
+}
+.vid-group>p{
+    color: white;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 15px;
+}
+
+.vid-group :nth-child(3){
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.vid-group :nth-child(4){
+    position: absolute;
+    top: 52%;
+    left: 30%;
+    font-size: 12px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.sec3{
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    position: relative;
+    background: url('https://cdn.sega.co.uk/humankind-game/public/styles/2560/public/content/media/bg/image/quote_bg.jpg?VersionId=ytqg71aZEBy.BvsMtzDyG5tgq07O5o1r&itok=JPAs0nDS');
+}
+
+.anim{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    text-align: center;
+    position: absolute;
+    right: 33%;
+    top: 40%;
+    animation-iteration-count: infinite;
+}
+
+.anim1{
+    animation-name: anim1;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    animation-duration: 3s;
+    /* animation-delay:6s ; */
+    animation-timing-function: ease-in-out;
+
+
+}
+
+@keyframes anim1 {
+    0%{
+        opacity: 1;
+
+    }
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+.anim2{
+
+    animation-name: anim2;
+    animation-duration: 3s;
+    animation-delay:3s ;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    animation-timing-function: ease-in-out;
+
+}
+@keyframes anim2 {
+    0%{
+        opacity: 0;
+
+    }
+    50%{
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+.anim3{
+
+    animation-name: anim3;
+    animation-duration: 3s;
+    animation-delay:6s ;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes anim3 {
+    0%{
+        opacity: 0;
+
+    }
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0.5;
+    }
+}
+
+.sade:hover{
+ filter: grayscale(100%);
+}
+
+.button:hover>img{
+
+}
+
+.button:hover{
+
+} 
+
+ .something{
+    display: none !important;
+  }
+
+@media screen and (max-width:768px) {
+  .sec2{
+    flex-wrap: wrap;
+  }
+
+  .group1{
+    flex-direction: column;
+  }
+
+  .anim{
+    right: 25%;
+    top: 40%;
+  }
+  .something{
+    display: block !important;
+  }
+
+  .container-fluid{
+  /* display: flex !important; */
+      /* flex-direction: row-reverse !important; */
+}
+ 
+}
+
+@media screen and (max-width:430px) {
+  header{
+    background-position-x: center;
+    background-position-y: bottom;
+  }
+
+  .section1{
+        flex-direction: column;
+        gap: 20px;
+  }
+
+  .sec2{
+    padding: 80px 20px;
+  }
+
+  .vid-group{
+    width: 180px;
+  }
+  .vid-group :nth-child(4) {
+    top: 48%;
+    left: 25%;
+  }
+
+  .group2{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .anim{
+    right: 2% ;
+  }
+}
